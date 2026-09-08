@@ -1,0 +1,11 @@
+hitrust:
+  store-id: ${TK_STORE_ID:T2671}
+  return-url: ${TK_RETURN_URL:http://localhost:8080/api/payment/return}
+  # 注意：update-url 在本機 dev 環境不會真的被 TrustPay 呼叫到（TrustPay 連不到 localhost），
+  # 這是預期中的，demo 靠 GET /api/payment/orders/{orderNo} 主動查詢，不依賴這支。
+  update-url: ${TK_UPDATE_URL:http://localhost:8080/api/payment/update}
+  frontend-result-url: ${TK_FRONTEND_RESULT_URL:http://localhost:5173/order/result}
+
+app:
+  cors:
+    allowed-origin: ${TK_CORS_ORIGIN:http://localhost:5173}

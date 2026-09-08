@@ -1,0 +1,36 @@
+# ==== 機密資料，絕對不要進版控 ====
+backend/keys/*.DER
+backend/keys/*.der
+backend/keys/*.pem
+backend/keys/*.key
+
+# ==== 交易 log（改動後會印出完整 request/response，可能含卡片相關欄位）====
+backend/logs/
+*.log
+
+# ==== Maven / Java build ====
+backend/target/
+*.class
+*.jar
+!backend/libs/*.jar
+
+# ==== Spring Boot ====
+backend/HELP.md
+
+# ==== 前端 (Vite/React) ====
+frontend/node_modules/
+frontend/dist/
+frontend/dist-ssr/
+frontend/.env
+frontend/.env.local
+frontend/.env.*.local
+
+# ==== IDE ====
+.idea/
+.vscode/
+*.iml
+*.swp
+
+# ==== OS ====
+.DS_Store
+Thumbs.db

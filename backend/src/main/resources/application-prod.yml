@@ -1,0 +1,9 @@
+hitrust:
+  store-id: ${TK_STORE_ID:?請設定 TK_STORE_ID 環境變數}
+  return-url: ${TK_RETURN_URL:?請設定 TK_RETURN_URL 環境變數（要是網際威信白名單登記的正式網域）}
+  update-url: ${TK_UPDATE_URL:?請設定 TK_UPDATE_URL 環境變數（要是網際威信白名單登記的正式網域，且必須 HTTPS）}
+  frontend-result-url: ${TK_FRONTEND_RESULT_URL:?請設定 TK_FRONTEND_RESULT_URL 環境變數}
+
+app:
+  cors:
+    allowed-origin: ${TK_CORS_ORIGIN:?請設定 TK_CORS_ORIGIN 環境變數}
