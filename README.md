@@ -28,7 +28,7 @@ frontend/   Vite + React 測試主控台，對應各項付款功能的操作面�
    \`\`\`
    預設跑在 `http://localhost:5173`，對應後端 `application-dev.yml` 的 `frontend-result-url`，兩邊 port 不要隨意改。
 
-3. 商店代號（storeId）設定對應 `backend/src/main/resources/*.conf`，每個 `.conf` 都指向 `backend/keys/` 下對應的 RSA 私鑰。新增商店時要同時準備好 `.conf` + 私鑰檔，並跟網際威信客服登記對應的 Return/Update URL 白名單。
+3. 商店代號（storeId）設定對應 `backend/src/main/resources/*.conf`，每個 `.conf` 都指向 `backend/keys/` 下對應的 RSA 私鑰。新增商店時要同時準備好 `.conf` + 私鑰檔。
 
 ## 完整請求/回應 Log
 
